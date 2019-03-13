@@ -4,6 +4,8 @@ import time
 import unittest
 from SeleniumPom.Pages.loginPage import LoginPage
 from SeleniumPom.Pages.homePage import HomePage
+import HtmlTestRunner
+
 
 class LoginTest(unittest.TestCase):
 
@@ -40,3 +42,7 @@ class LoginTest(unittest.TestCase):
             cls.driver.close()
             cls.driver.quit()
             print("Test Completed")
+
+
+            if __name__ == '__main__':
+                unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='/Users/srinidhik/PycharmProjects/PythonProjects/Reports'))
