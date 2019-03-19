@@ -15,7 +15,6 @@ class LoginTest(unittest.TestCase):
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
-
     def test_Login(self):
         driver = self.driver
 
@@ -39,10 +38,10 @@ class LoginTest(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-            cls.driver.close()
-            cls.driver.quit()
-            print("Test Completed")
+        cls.driver.close()
+        cls.driver.quit()
+        print("Test Completed")
 
-
-            if __name__ == '__main__':
-                unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='/Users/srinidhik/PycharmProjects/PythonProjects/Reports'))
+        if __name__ == '__main__':
+            unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(
+                output='/Users/srinidhik/PycharmProjects/PythonProjects/Reports'))
